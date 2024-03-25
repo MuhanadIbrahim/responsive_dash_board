@@ -20,11 +20,17 @@ class AllExpensess extends StatelessWidget {
       child: const Column(
         children: [
           AllExpensessHeader(),
-          AllExpensessItem(allExpnsessItemModel: AllExpnsessItemModel(title: 'Income'
-          , image: Assets.assetsImagesIncome, date: 'April 2022', price: r'$20,129'))
+          SizedBox(
+            height: 16,
+          ),
+          AllExpensessItem(
+              allExpnsessItemModel: AllExpnsessItemModel(
+                  title: 'Income',
+                  image: Assets.assetsImagesIncome,
+                  date: 'April 2022',
+                  price: r'$20,129'))
         ],
       ),
     );
   }
 }
-
