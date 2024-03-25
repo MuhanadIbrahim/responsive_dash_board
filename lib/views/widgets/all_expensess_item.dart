@@ -4,8 +4,9 @@ import 'package:responsive_dash_board/utils/app_styles.dart';
 import 'package:responsive_dash_board/views/widgets/all_expensess_item_header.dart';
 
 class AllExpensessItem extends StatelessWidget {
-  const AllExpensessItem({super.key, required this.allExpnsessItemModel});
+  const AllExpensessItem({super.key, required this.allExpnsessItemModel, required this.isSelected});
   final AllExpnsessItemModel allExpnsessItemModel;
+  final bool isSelected;
   @override
   Widget build(BuildContext context) {
     return Container(
