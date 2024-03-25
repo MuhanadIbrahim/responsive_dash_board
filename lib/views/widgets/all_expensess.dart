@@ -3,6 +3,7 @@ import 'package:responsive_dash_board/model/all_expensess_item_model.dart';
 import 'package:responsive_dash_board/utils/app_images.dart';
 import 'package:responsive_dash_board/views/widgets/all_expensess_header.dart';
 import 'package:responsive_dash_board/views/widgets/all_expensess_item.dart';
+import 'package:responsive_dash_board/views/widgets/all_expensess_item_list_view.dart';
 
 class AllExpensess extends StatelessWidget {
   const AllExpensess({super.key});
@@ -23,12 +24,7 @@ class AllExpensess extends StatelessWidget {
           SizedBox(
             height: 16,
           ),
-          AllExpensessItem(
-              allExpnsessItemModel: AllExpnsessItemModel(
-                  title: 'Income',
-                  image: Assets.assetsImagesIncome,
-                  date: 'April 2022',
-                  price: r'$20,129'))
+          AllExpenseeItemListView()
         ],
       ),
     );
