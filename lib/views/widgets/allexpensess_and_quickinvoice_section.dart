@@ -20,7 +20,7 @@ class AllExpensessAndquickinvoiceSection extends StatelessWidget {
         SizedBox(
           height: 24,
         ),
-        QuickInvoice(),
+        Expanded(flex: 2, child: QuickInvoice()),
       ],
     );
   }

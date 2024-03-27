@@ -14,12 +14,12 @@ class QuickInvoice extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           QuickInvoiceHeader(),
-          LatestTransction(),
+          Expanded(child: LatestTransction()),
           Divider(
             height: 48,
             color: Color(0xffF1F1F1),
           ),
-          QuickInvoiceForm(),
+          Expanded(child: QuickInvoiceForm()),
         ],
       ),
     );
