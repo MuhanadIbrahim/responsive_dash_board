@@ -5,6 +5,7 @@ import 'package:responsive_dash_board/views/widgets/allexpensess_and_quickinvoic
 import 'package:responsive_dash_board/views/widgets/custom_drawer.dart';
 import 'package:responsive_dash_board/views/widgets/my_card.dart';
 import 'package:responsive_dash_board/views/widgets/my_cards_section.dart';
+import 'package:responsive_dash_board/views/widgets/transction_history.dart';
 
 class DashBoardDesktopLayout extends StatelessWidget {
   const DashBoardDesktopLayout({super.key});
@@ -21,7 +22,7 @@ class DashBoardDesktopLayout extends StatelessWidget {
         SizedBox(
           width: 24,
         ),
-        Expanded(child: MyCardsSection())
+        Expanded(child: TransctionHistory())
       ],
     );
   }
