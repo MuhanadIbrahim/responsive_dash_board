@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_dash_board/views/widgets/allexpensess_and_quickinvoice_section.dart';
 import 'package:responsive_dash_board/views/widgets/custom_drawer.dart';
-import 'package:responsive_dash_board/views/widgets/my_card.dart';
-import 'package:responsive_dash_board/views/widgets/my_cards_section.dart';
-import 'package:responsive_dash_board/views/widgets/transction_history.dart';
+import 'package:responsive_dash_board/views/widgets/my_card_and_transction_history_section.dart';
 
 class DashBoardDesktopLayout extends StatelessWidget {
   const DashBoardDesktopLayout({super.key});
@@ -22,7 +20,7 @@ class DashBoardDesktopLayout extends StatelessWidget {
         SizedBox(
           width: 24,
         ),
-        Expanded(child: TransctionHistory())
+        Expanded(child: MyCardsAndTransctionHistorySection())
       ],
     );
   }

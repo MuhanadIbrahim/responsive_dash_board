@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/views/widgets/transction_history_header.dart';
+import 'package:responsive_dash_board/views/widgets/transction_history_list_view.dart';
 
 class TransctionHistory extends StatelessWidget {
   const TransctionHistory({super.key});
@@ -22,7 +23,11 @@ class TransctionHistory extends StatelessWidget {
             fontWeight: FontWeight.w500,
             height: 0,
           ),
-        )
+        ),
+        SizedBox(
+          height: 16,
+        ),
+        TransctionHistoryListView()
       ],
     );
   }
