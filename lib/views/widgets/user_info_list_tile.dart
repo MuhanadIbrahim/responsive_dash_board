@@ -21,7 +21,7 @@ class UserInfoListTile extends StatelessWidget {
             alignment: AlignmentDirectional.centerStart,
             child: Text(
               userInfoModel.name,
-              style: AppStyles.styleSemiBold16,
+              style: AppStyles.styleSemiBold16(context),
             ),
           ),
           subtitle: FittedBox(
@@ -29,7 +29,7 @@ class UserInfoListTile extends StatelessWidget {
             alignment: AlignmentDirectional.centerStart,
             child: Text(
               userInfoModel.title,
-              style: AppStyles.styleRegular12,
+              style: AppStyles.styleRegular12(context),
             ),
           ),
         ),

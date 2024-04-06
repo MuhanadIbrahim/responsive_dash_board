@@ -1,4 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter/widgets.dart';
 import 'package:responsive_dash_board/model/all_expensess_item_model.dart';
 import 'package:responsive_dash_board/utils/app_styles.dart';
 import 'package:responsive_dash_board/views/widgets/all_expensess_item_header.dart';
@@ -31,15 +35,27 @@ class InActiveAllExpensessItem extends StatelessWidget {
           const SizedBox(
             height: 34,
           ),
-          Text(allExpnsessItemModel.title, style: AppStyles.styleMedium16),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(allExpnsessItemModel.title,
+                style: AppStyles.styleMedium16(context)),
+          ),
           const SizedBox(
             height: 8,
           ),
-          Text(allExpnsessItemModel.date, style: AppStyles.styleRegular14),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(allExpnsessItemModel.date,
+                style: AppStyles.styleRegular14(context)),
+          ),
           const SizedBox(
             height: 16,
           ),
-          Text(allExpnsessItemModel.price, style: AppStyles.styleSemiBold24)
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(allExpnsessItemModel.price,
+                style: AppStyles.styleSemiBold24(context)),
+          )
         ],
       ),
     );
@@ -61,6 +77,7 @@ class ActiveAllExpensessItem extends StatelessWidget {
       decoration: ShapeDecoration(
         color: const Color(0xff4EB7F2),
         shape: RoundedRectangleBorder(
+          side: const BorderSide(width: 1, color: Color(0xff4EB7F2)),
           borderRadius: BorderRadius.circular(12),
         ),
       ),
@@ -75,20 +92,31 @@ class ActiveAllExpensessItem extends StatelessWidget {
           const SizedBox(
             height: 34,
           ),
-          Text(allExpnsessItemModel.title,
-              style: AppStyles.styleMedium16.copyWith(color: Colors.white)),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(allExpnsessItemModel.title,
+                style: AppStyles.styleMedium16(context)
+                    .copyWith(color: Colors.white)),
+          ),
           const SizedBox(
             height: 8,
           ),
-          Text(allExpnsessItemModel.date,
-              style: AppStyles.styleRegular14.copyWith(
-                color: const Color(0xFFFAFAFA),
-              )),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(allExpnsessItemModel.date,
+                style: AppStyles.styleRegular14(context).copyWith(
+                  color: const Color(0xFFFAFAFA),
+                )),
+          ),
           const SizedBox(
             height: 16,
           ),
-          Text(allExpnsessItemModel.price,
-              style: AppStyles.styleSemiBold24.copyWith(color: Colors.white))
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(allExpnsessItemModel.price,
+                style: AppStyles.styleSemiBold24(context)
+                    .copyWith(color: Colors.white)),
+          )
         ],
       ),
     );
